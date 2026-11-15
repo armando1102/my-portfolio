@@ -599,6 +599,7 @@ nav {
     background-color: #0b1020;
     color: white;
     padding: 50px 0;
+    border-top: 1px solid #252b3b;
 }
 .location {
     display: flex;
@@ -672,6 +673,53 @@ nav {
     background-color: #1d4ed8;
     transform: translateY(-3px);
 }
+
+/* FOOTER */
+.footer {
+    background-color: #0b1020;
+    color: white;
+    border-top: 1px solid #252b3b;
+    padding: 15px 4%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* BRAND */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-brand h2 {
+    color: #8b5cf6;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.footer-brand span {
+    font-size: 13px;
+    color: #e5e7eb;
+}
+
+/* COPYRIGHT */
+.footer-copyright p {
+    font-size: 12px;
+    color: #d1d5db;
+}
+
+/* TAGLINE */
+.footer-tagline p {
+    font-size: 12px;
+    color: #e5e7eb;
+}
+
 
 /* RESPONSIVE MOBILE */
 @media (max-width: 480px) {
@@ -857,5 +905,18 @@ nav {
 
     .achievements {
         grid-column: auto;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-brand {
+        justify-content: center;
+    }
+
+    .footer {
+        padding: 25px 15px;
     }
 }
